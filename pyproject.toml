@@ -1,0 +1,32 @@
+[build-system]
+requires      = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "license-key"
+version = "1.0.2"
+description = "License key managaming for you project"
+readme = "README.md"
+authors = [{ name = "marat2509", email = "marat.budkevich.0000@gmail.com" }]
+license = { file = "LICENSE" }
+keywords = ["license key"]
+dependencies = [
+    "requires",
+    "loguru",
+]
+
+[project.urls]
+Homepage = "https://github.com/marat2509/license-key"
+
+[project.scripts]
+license_key = "license_key.__init__"
+[tool.bumpver]
+current_version = "1.0.2"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"license_key/__init__.py" = ['__version__ = "{version}"']
