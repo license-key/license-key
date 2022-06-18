@@ -2,7 +2,7 @@ import requests
 import json
 from loguru import logger
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 
 class init:
@@ -65,4 +65,4 @@ class init:
             return(self.data[license_key][key])
         except KeyError:
             if self.debug == True: logger.error("Key " + key + "not found")
-            return(404)
+            return(-404)

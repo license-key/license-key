@@ -31,12 +31,12 @@ Need host JSON file to your site or on GitHub Gists with all licenses data with 
     >>> print(license.get(license_key = "WZ3UD-ADZH8-MFYJB-RUGM3-J37TX", key = "expire"))
     <<< 30.12.2022
     >>> print(license.get(license_key = "WZ3UD-ADZH8-MFYJB-RUGM3-J37TX", key = "THIS_KEY_DOESNT_EXISTS"))
-    <<< 404  # Key not found
+    <<< -404  # Key not found
 ### Status codes
 | Code | Description           |
 |------|-----------------------|
 | -406 | Failed to fetch       |
-| 404  | Key not found         |
+| -404  | Key not found         |
 | -1   | License key expired   |
 | 0    | License key not found |
 | 1    | License key valid     |
