@@ -2,7 +2,7 @@ import requests
 import json
 from loguru import logger
 
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 
 
 class init:
