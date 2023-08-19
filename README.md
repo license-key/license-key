@@ -1,6 +1,8 @@
 ## License Checker for Python project
 This module provides you with a wide functionality for checking license keys and their expiration dates for your program written in Python
 
+
+# Deprecated, because developing new version with many features
 ### Installing via PyPi
 
     pip install license-key
